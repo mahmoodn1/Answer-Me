@@ -1,0 +1,8 @@
+applications:
+- name: Answer-Meeee
+  memory: 1GB
+  instances: 1
+  path: .
+  command: bundle exec rake db:migrate && bundle exec rake db:seed && bundle exec rails s -p $PORT
+  services:
+    - postgres-myapp

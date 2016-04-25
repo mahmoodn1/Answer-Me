@@ -1,0 +1,8 @@
+<% content_for :headerwrap do %>
+  <%= render 'components/login_register' %>
+<% end %>
+
+<ul class="media-list">
+  <%= sync partial: "item", collection: @items %>
+  <%= sync_new partial: "item", resource: Item.new, direction: :append %>
+</ul>
