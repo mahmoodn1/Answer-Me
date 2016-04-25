@@ -1,8 +1,6 @@
 <h1>Admin : Listing Items</h1>
 <%= link_to 'New Post', new_admin_item_path, class: 'btn btn-link' %>
 
-<button id="reset-and-load-from-hn" data-api="<%= admin_items_path %>" class="btn btn-default">Reset and Load from HackerNews</button>
-
 <ul class="list-group">
   <%= render @admin_items %>
 </ul>
