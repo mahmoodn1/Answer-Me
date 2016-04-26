@@ -18252,3 +18252,1558 @@ Processing by ItemsController#index as HTML
   Rendered components/_footer.html.erb (0.0ms)
   Rendered components/_google_analytics.html.erb (0.0ms)
 Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-25 19:59:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered components/_login_register.html.erb (30.8ms)
+  [1m[36mItem Load (0.7ms)[0m  [1mSELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (6, 3)
+  [1m[36mVote Load (0.4ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (319.5ms)
+  [1m[35mVote Load (0.3ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.8ms)
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 5], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.4ms)
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 4], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.7ms)
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 7], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 6], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.0ms)
+  Rendered items/index.html.erb within layouts/application (387.0ms)
+  Rendered components/_flash.html.erb (0.4ms)
+  Rendered components/_top_navigation.html.erb (2.4ms)
+  Rendered components/_footer.html.erb (0.2ms)
+  Rendered components/_google_analytics.html.erb (0.3ms)
+Completed 200 OK in 635ms (Views: 614.6ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-25 19:59:23 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered components/_login_register.html.erb (1.1ms)
+  [1m[35mItem Load (0.5ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (6, 3)[0m
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.7ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.3ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 5], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 4], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 7], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (10.4ms)
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 6], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (2.0ms)
+  Rendered items/index.html.erb within layouts/application (32.0ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.4ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 61ms (Views: 59.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/items?newest=true" for ::1 at 2016-04-25 19:59:26 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"newest"=>"true"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered components/_login_register.html.erb (1.0ms)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"  ORDER BY "items"."created_at" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (6, 3)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 7], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 6], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.8ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 5], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.0ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 4], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.8ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  Rendered items/index.html.erb within layouts/application (15.6ms)
+  Rendered components/_flash.html.erb (0.0ms)
+  Rendered components/_top_navigation.html.erb (1.3ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 66ms (Views: 63.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/items/new" for ::1 at 2016-04-25 19:59:27 -0400
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered items/_form.html.erb (57.9ms)
+  Rendered items/new.html.erb within layouts/application (59.3ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 97ms (Views: 95.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/items" for ::1 at 2016-04-25 19:59:39 -0400
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8MmETFWpd7IVdtnoCYT4IM7a1JwG6DPWhWf1vXnFmjyHM3tPFsyFT3p7OBC2P85LhMUqtd7eAuwnLn4NhDVBGA==", "item"=>{"title"=>"lol", "url"=>"", "content"=>"hahaha"}, "commit"=>"Create Item"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mItem Exists (0.2ms)[0m  SELECT  1 AS one FROM "items" WHERE "items"."id" IS NULL LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "items" ("title", "url", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "lol"], ["url", ""], ["content", "hahaha"], ["user_id", 3], ["created_at", "2016-04-25 23:59:39.094304"], ["updated_at", "2016-04-25 23:59:39.094304"]]
+  [1m[35m (6.0ms)[0m  COMMIT
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 8], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (3.4ms)
+Redirected to http://localhost:3000/items/8
+Completed 302 Found in 29ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/items/8" for ::1 at 2016-04-25 19:59:39 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mVote Load (0.3ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (8)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mItemComment Load (0.2ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 8]]
+  Rendered items/show.html.erb within layouts/application (20.3ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.6ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 89ms (Views: 68.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/items/8" for ::1 at 2016-04-25 20:01:45 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (8)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mItemComment Load (0.2ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 8]]
+  Rendered items/show.html.erb within layouts/application (8.0ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.4ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 56ms (Views: 51.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items?newest=true" for ::1 at 2016-04-25 20:03:32 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"newest"=>"true"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered components/_login_register.html.erb (1.3ms)
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"  ORDER BY "items"."created_at" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (3, 6)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 8], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.7ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 7], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.4ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 6], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 5], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.7ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 4], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  Rendered items/index.html.erb within layouts/application (22.9ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 60ms (Views: 57.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/items/new" for ::1 at 2016-04-25 20:04:44 -0400
+Processing by ItemsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  Rendered items/_form.html.erb (7.0ms)
+  Rendered items/new.html.erb within layouts/application (7.6ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (3.0ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.1ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/items" for ::1 at 2016-04-25 20:04:59 -0400
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BvMHVDhCmHHfOQVYaWt4l+o/vmcsq2ahiq3oIQwvkeCiUkwHPJxyshUEZIuXXxeI6ZCduyL100uAXuuB9HbJZg==", "item"=>{"title"=>"ha", "url"=>"", "content"=>"haha"}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mItem Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "items" WHERE "items"."id" IS NULL LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("title", "url", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["title", "ha"], ["url", ""], ["content", "haha"], ["user_id", 6], ["created_at", "2016-04-26 00:04:59.929392"], ["updated_at", "2016-04-26 00:04:59.929392"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 9], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (2.0ms)
+Redirected to http://localhost:3000/items/9
+Completed 302 Found in 16ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/items/9" for ::1 at 2016-04-25 20:04:59 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (9)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mItemComment Load (0.2ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 9]]
+  Rendered items/show.html.erb within layouts/application (6.6ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.3ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 42.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/items/new" for ::1 at 2016-04-25 20:06:24 -0400
+Processing by ItemsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered items/_form.html.erb (7.5ms)
+  Rendered items/new.html.erb within layouts/application (8.3ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.5ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/items" for ::1 at 2016-04-25 20:06:31 -0400
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cV6E2Cfgohhyee78RpxfStbjMf/GasB61Wnr3AgmdUoGpHvbZIVQ5R10DwT5J2khnPzP1h5c8UB3IGBs9daubg==", "item"=>{"title"=>"nba", "url"=>"http://nba.com", "content"=>""}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mItem Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "items" WHERE "items"."id" IS NULL LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("title", "url", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["title", "nba"], ["url", "http://nba.com"], ["content", ""], ["user_id", 3], ["created_at", "2016-04-26 00:06:31.541765"], ["updated_at", "2016-04-26 00:06:31.541765"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 10], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.6ms)
+Redirected to http://localhost:3000/items/10
+Completed 302 Found in 15ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/items/10" for ::1 at 2016-04-25 20:06:31 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (10)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mItemComment Load (0.2ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 10]]
+  Rendered items/show.html.erb within layouts/application (6.4ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (2.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 39ms (Views: 36.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items/10" for ::1 at 2016-04-25 20:06:32 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 10]]
+  [1m[36mVote Load (0.3ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (10)[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mItemComment Load (0.4ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 10]]
+  Rendered items/show.html.erb within layouts/application (5.7ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 36.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items/10" for ::1 at 2016-04-25 20:06:34 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (10)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mItemComment Load (0.2ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 10]]
+  Rendered items/show.html.erb within layouts/application (5.2ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 38ms (Views: 35.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items/10" for ::1 at 2016-04-25 20:06:34 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 10]]
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (10)[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mItemComment Load (0.3ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 10]]
+  Rendered items/show.html.erb within layouts/application (5.5ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.4ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items/10" for ::1 at 2016-04-25 20:06:35 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  [1m[35mVote Load (0.3ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (10)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mItemComment Load (0.1ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 10]]
+  Rendered items/show.html.erb within layouts/application (4.9ms)
+  Rendered components/_flash.html.erb (0.0ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 39.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-04-25 20:12:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered components/_login_register.html.erb (28.7ms)
+  [1m[36mItem Load (0.7ms)[0m  [1mSELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (6, 3)
+  [1m[36mVote Load (0.3ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 7], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (291.8ms)
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 5], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.6ms)
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 4], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.2ms)
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.3ms)
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 10], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 6], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.0ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 8], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.0ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 9], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  Rendered items/index.html.erb within layouts/application (365.7ms)
+  Rendered components/_flash.html.erb (0.4ms)
+  Rendered components/_top_navigation.html.erb (2.4ms)
+  Rendered components/_footer.html.erb (0.2ms)
+  Rendered components/_google_analytics.html.erb (0.3ms)
+Completed 200 OK in 738ms (Views: 722.2ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/" for ::1 at 2016-04-25 20:12:04 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered components/_login_register.html.erb (1.2ms)
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (6, 3)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 7], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.5ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 5], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.2ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 4], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.3ms)
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.4ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.4ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 10], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.4ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 6], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 8], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 9], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.5ms)
+  Rendered items/index.html.erb within layouts/application (28.1ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.3ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 62ms (Views: 59.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/items" for ::1 at 2016-04-25 20:12:09 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered components/_login_register.html.erb (1.3ms)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (6, 3)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 7], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.8ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 5], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.2ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 4], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.3ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.3ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.3ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 10], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 6], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.0ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 8], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.2ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 9], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.8ms)
+  Rendered items/index.html.erb within layouts/application (28.5ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.5ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 85ms (Views: 83.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/items?newest=true" for ::1 at 2016-04-25 20:12:09 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"newest"=>"true"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered components/_login_register.html.erb (1.2ms)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"  ORDER BY "items"."created_at" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (3, 6)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 10], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.8ms)
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 9], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.9ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 8], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.3ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 7], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (2.7ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 6], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (2.0ms)
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 5], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (2.1ms)
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 4], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (2.5ms)
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (2.0ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.7ms)
+  Rendered items/index.html.erb within layouts/application (38.2ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.1ms)
+Completed 200 OK in 93ms (Views: 90.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/items/8" for ::1 at 2016-04-25 20:14:59 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mVote Load (0.4ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (8)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mItemComment Load (0.3ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 8]]
+  Rendered items/show.html.erb within layouts/application (58.3ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.3ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 101ms (Views: 86.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2016-04-25 20:34:16 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  Rendered components/_login_register.html.erb (1.0ms)
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (6, 3)[0m
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 7], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.4ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 5], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 4], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.8ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.2ms)
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 10], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.2ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 6], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 8], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.0ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 9], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  Rendered items/index.html.erb within layouts/application (23.7ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.3ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/logout" for ::1 at 2016-04-25 20:35:05 -0400
+Processing by UserSessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-04-25 20:35:05 -0400
+Processing by ItemsController#index as HTML
+  Rendered user_sessions/_form.html.erb (10.2ms)
+  Rendered users/_form.html.erb (9.8ms)
+  Rendered components/_login_register.html.erb (23.6ms)
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (6, 3)[0m
+  Rendered sync/items/_item.html.erb (0.6ms)
+  Rendered sync/items/_item.html.erb (0.4ms)
+  Rendered sync/items/_item.html.erb (0.4ms)
+  Rendered sync/items/_item.html.erb (0.4ms)
+  Rendered sync/items/_item.html.erb (0.4ms)
+  Rendered sync/items/_item.html.erb (0.4ms)
+  Rendered sync/items/_item.html.erb (0.4ms)
+  Rendered sync/items/_item.html.erb (0.4ms)
+  Rendered sync/items/_item.html.erb (0.5ms)
+  Rendered items/index.html.erb within layouts/application (39.7ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.9ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 73ms (Views: 71.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-04-25 20:39:45 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered components/_login_register.html.erb (28.4ms)
+  [1m[36mItem Load (0.6ms)[0m  [1mSELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (6, 3)
+  [1m[36mVote Load (0.7ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 7], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (294.4ms)
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 5], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.6ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 4], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.2ms)
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.3ms)
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 10], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 6], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 8], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.0ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 9], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.0ms)
+  Rendered items/index.html.erb within layouts/application (367.7ms)
+  Rendered components/_flash.html.erb (0.4ms)
+  Rendered components/_top_navigation.html.erb (2.3ms)
+  Rendered components/_footer.html.erb (0.2ms)
+  Rendered components/_google_analytics.html.erb (0.3ms)
+Completed 200 OK in 626ms (Views: 610.1ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/" for ::1 at 2016-04-25 20:39:46 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered components/_login_register.html.erb (1.2ms)
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (6, 3)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 7], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.3ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 5], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.0ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 4], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.0ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 10], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 6], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.8ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 8], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 9], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  Rendered items/index.html.erb within layouts/application (22.6ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.3ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/items/7" for ::1 at 2016-04-25 20:39:57 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mVote Load (0.3ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (7)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mItemComment Load (0.3ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (3)[0m
+  Rendered items/show.html.erb within layouts/application (91.7ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.7ms)
+  Rendered components/_footer.html.erb (0.1ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 142ms (Views: 130.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/items/5" for ::1 at 2016-04-25 20:40:04 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (5)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mItemComment Load (0.2ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 5]]
+  Rendered items/show.html.erb within layouts/application (6.3ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.3ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 59ms (Views: 54.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items/4" for ::1 at 2016-04-25 20:40:10 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (4)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mItemComment Load (0.2ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 4]]
+  Rendered items/show.html.erb within layouts/application (8.7ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.5ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 61ms (Views: 57.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items/3" for ::1 at 2016-04-25 20:40:12 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (3)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mItemComment Load (0.2ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 3]]
+  Rendered items/show.html.erb within layouts/application (9.2ms)
+  Rendered components/_flash.html.erb (0.0ms)
+  Rendered components/_top_navigation.html.erb (1.0ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 68ms (Views: 63.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items/8" for ::1 at 2016-04-25 20:40:17 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (8)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mItemComment Load (0.2ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 8]]
+  Rendered items/show.html.erb within layouts/application (5.3ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items/8" for ::1 at 2016-04-25 20:40:34 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (8)[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mItemComment Load (0.2ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 8]]
+  Rendered items/show.html.erb within layouts/application (6.7ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.4ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 37.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items/8" for ::1 at 2016-04-25 20:41:16 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (8)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mItemComment Load (0.3ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 8]]
+  Rendered items/show.html.erb within layouts/application (5.6ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.9ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items/7" for ::1 at 2016-04-25 20:41:19 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mVote Load (0.3ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (7)[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mItemComment Load (0.3ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 7]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (3)[0m
+  Rendered items/show.html.erb within layouts/application (7.6ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.0ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 36.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/items/7" for ::1 at 2016-04-25 20:41:20 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (7)[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mItemComment Load (0.2ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 7]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (3)[0m
+  Rendered items/show.html.erb within layouts/application (8.0ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 39ms (Views: 34.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/items/7" for ::1 at 2016-04-25 20:41:21 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (7)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mItemComment Load (0.1ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 7]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (3)[0m
+  Rendered items/show.html.erb within layouts/application (8.1ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.0ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 38ms (Views: 34.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/items/7" for ::1 at 2016-04-25 20:41:21 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (7)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mItemComment Load (0.1ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (3)[0m
+  Rendered items/show.html.erb within layouts/application (7.2ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.5ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items/7" for ::1 at 2016-04-25 20:41:22 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (7)[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mItemComment Load (0.2ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (3)[0m
+  Rendered items/show.html.erb within layouts/application (6.7ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 37.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items/7" for ::1 at 2016-04-25 20:41:23 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (7)[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mItemComment Load (0.2ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (3)[0m
+  Rendered items/show.html.erb within layouts/application (7.3ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 53ms (Views: 49.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items/7" for ::1 at 2016-04-25 20:41:23 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (7)[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mItemComment Load (0.1ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 7]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (3)[0m
+  Rendered items/show.html.erb within layouts/application (7.9ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 36.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items/7" for ::1 at 2016-04-25 20:41:23 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (7)[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mItemComment Load (0.2ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 7]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (3)[0m
+  Rendered items/show.html.erb within layouts/application (14.0ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.3ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 54ms (Views: 51.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items/7" for ::1 at 2016-04-25 20:41:28 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (7)[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mItemComment Load (0.1ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 7]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (3)[0m
+  Rendered items/show.html.erb within layouts/application (8.6ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 56ms (Views: 51.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items/7" for ::1 at 2016-04-25 20:41:29 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mVote Load (0.3ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (7)[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mItemComment Load (0.2ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 7]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (3)[0m
+  Rendered items/show.html.erb within layouts/application (7.6ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 42.9ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/items/7/vote" for ::1 at 2016-04-25 20:41:46 -0400
+Processing by UserItemVotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EMXwaELS2YRyxd/03gR+Ahz5u1xice7RRHYev4fd1lZnPw9rAbcreR3IPgxhv0hpVuZFdbpH3+vmP5UPei0Ncg==", "id"=>"7"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mVote Load (0.2ms)[0m  SELECT  "votes".* FROM "votes" WHERE "votes"."user_id" = $1 AND "votes"."votable_id" = $2 AND "votes"."votable_type" = $3  ORDER BY "votes"."id" ASC LIMIT 1  [["user_id", 3], ["votable_id", 7], ["votable_type", "Item"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "votes" WHERE "votes"."id" = $1  [["id", 10]]
+  [1m[36m (6.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 7], ["votable_type", "Item"]]
+  [1m[35mItem Exists (0.3ms)[0m  SELECT  1 AS one FROM "items" LIMIT 1
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mItem Load (23.5ms)[0m  SELECT  id, hot_score(0, 0, created_at) as hot_score FROM "items" WHERE "items"."id" = $1  ORDER BY "items"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36mItem Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "items" WHERE ("items"."id" = 7 AND "items"."id" != 7) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "items" SET "upvotes_count" = $1, "score" = $2, "updated_at" = $3 WHERE "items"."id" = $4  [["upvotes_count", 0], ["score", 0], ["updated_at", "2016-04-26 00:41:46.881250"], ["id", 7]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/items/7
+Completed 302 Found in 55ms (ActiveRecord: 32.3ms)
+
+
+Started GET "/items/7" for ::1 at 2016-04-25 20:41:46 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mVote Load (0.3ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (7)[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mItemComment Load (0.1ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (3)[0m
+  Rendered items/show.html.erb within layouts/application (7.7ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.3ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 49ms (Views: 43.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/items/7/vote" for ::1 at 2016-04-25 20:41:49 -0400
+Processing by UserItemVotesController#create as HTML
+  Parameters: {"authenticity_token"=>"m+ceMkyqVW5hynR7a42cws+jPZOkU+W7W390d11OdbvsHeExD8+nkw7HlYPUNqqphbzDunxl1IH5Nv/HoL6unw==", "id"=>"7"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mVote Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "votes" WHERE ("votes"."votable_id" = 7 AND "votes"."user_id" = 3 AND "votes"."votable_type" = 'Item') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "votes" ("votable_id", "votable_type", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["votable_id", 7], ["votable_type", "Item"], ["user_id", 3], ["created_at", "2016-04-26 00:41:49.204798"], ["updated_at", "2016-04-26 00:41:49.204798"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 7], ["votable_type", "Item"]]
+  [1m[35mItem Exists (0.1ms)[0m  SELECT  1 AS one FROM "items" LIMIT 1
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT  id, hot_score(1, 0, created_at) as hot_score FROM "items" WHERE "items"."id" = $1  ORDER BY "items"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36mItem Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "items" WHERE ("items"."id" = 7 AND "items"."id" != 7) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "items" SET "upvotes_count" = $1, "score" = $2, "updated_at" = $3 WHERE "items"."id" = $4  [["upvotes_count", 1], ["score", 1], ["updated_at", "2016-04-26 00:41:49.210122"], ["id", 7]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/items/7
+Completed 302 Found in 12ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/items/7" for ::1 at 2016-04-25 20:41:49 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (7)[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mItemComment Load (0.2ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 7]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (3)[0m
+  Rendered items/show.html.erb within layouts/application (7.0ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.7ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items/new" for ::1 at 2016-04-25 20:50:13 -0400
+Processing by ItemsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered items/_form.html.erb (11.7ms)
+  Rendered items/new.html.erb within layouts/application (14.5ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/items" for ::1 at 2016-04-25 20:50:24 -0400
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2TMKhqBGrg9ykQJy7r9UHta4eaACqTg0I3ueQdfTySuuyfWF4yNc8h2c44pRBGJ1nKeHidqfCQ6BMhXxKiMSDw==", "item"=>{"title"=>"lolol", "url"=>"http://lol.com", "content"=>""}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mItem Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "items" WHERE "items"."id" IS NULL LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("title", "url", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["title", "lolol"], ["url", "http://lol.com"], ["content", ""], ["user_id", 3], ["created_at", "2016-04-26 00:50:24.086839"], ["updated_at", "2016-04-26 00:50:24.086839"]]
+  [1m[36m (4.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 11], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (2.0ms)
+Redirected to http://localhost:3000/items/11
+Completed 302 Found in 18ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/items/11" for ::1 at 2016-04-25 20:50:24 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (11)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mItemComment Load (0.2ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 11]]
+  Rendered items/show.html.erb within layouts/application (6.9ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.3ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 33.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items/new" for ::1 at 2016-04-25 20:50:28 -0400
+Processing by ItemsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered items/_form.html.erb (6.6ms)
+  Rendered items/new.html.erb within layouts/application (7.2ms)
+  Rendered components/_flash.html.erb (0.0ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/items" for ::1 at 2016-04-25 20:50:32 -0400
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"whNZ9kEKHGRqDFHfUTSzwrB2R3xRBWisSYGwM4MQTUm16ab1Am/umQUBsCfuj4Wp+mm5VYkzWZbryDuDfuCWbQ==", "item"=>{"title"=>"lasfa", "url"=>"", "content"=>"sdf"}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mItem Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "items" WHERE "items"."id" IS NULL LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "items" ("title", "url", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["title", "lasfa"], ["url", ""], ["content", "sdf"], ["user_id", 3], ["created_at", "2016-04-26 00:50:32.015083"], ["updated_at", "2016-04-26 00:50:32.015083"]]
+  [1m[36m (4.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 12], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.2ms)
+Redirected to http://localhost:3000/items/12
+Completed 302 Found in 12ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/items/12" for ::1 at 2016-04-25 20:50:32 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 12]]
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (12)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mItemComment Load (0.1ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 12]]
+  Rendered items/show.html.erb within layouts/application (5.8ms)
+  Rendered components/_flash.html.erb (0.2ms)
+  Rendered components/_top_navigation.html.erb (1.8ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 39ms (Views: 35.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items/12" for ::1 at 2016-04-25 20:50:40 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 12]]
+  [1m[36mVote Load (0.4ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (12)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mItemComment Load (0.1ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 12]]
+  Rendered items/show.html.erb within layouts/application (4.8ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 45ms (Views: 42.5ms | ActiveRecord: 0.9ms)
+  [1m[36m (35.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (25.0ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20150215221519)
+  [1m[35m (0.1ms)[0m  BEGIN
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/nadeemmahmood/Downloads/AnswerMe/db/migrate/20150215221519_create_users.rb:17)
+  [1m[36m (28.8ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "username" character varying NOT NULL, "crypted_password" character varying, "salt" character varying, "admin" boolean DEFAULT 'f' NOT NULL, "disabled" boolean DEFAULT 'f' NOT NULL, "karma" integer DEFAULT 0 NOT NULL, "about" text, "auth" character varying, "token" character varying, "karma_increment_time" timestamp, "pwd_reset" timestamp, "replies_count" integer DEFAULT 0 NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (3.7ms)[0m  CREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")
+  [1m[36m (0.7ms)[0m  [1mCREATE  INDEX  "index_users_on_auth_and_token" ON "users"  ("auth", "token")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150215221519"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateItems (20150215230703)
+  [1m[35m (6.0ms)[0m  BEGIN
+  [1m[36m (14.4ms)[0m  [1mCREATE TABLE "items" ("id" serial primary key, "title" character varying NOT NULL, "url" character varying, "content" text, "user_id" integer NOT NULL, "disabled" boolean DEFAULT 'f' NOT NULL, "comments_count" integer DEFAULT 0 NOT NULL, "upvotes_count" integer DEFAULT 0 NOT NULL, "downvotes_count" integer DEFAULT 0 NOT NULL, "score" integer DEFAULT 0 NOT NULL, "rank" integer DEFAULT 0 NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  CREATE  INDEX  "index_items_on_user_id" ON "items"  ("user_id")
+  [1m[36m (0.5ms)[0m  [1mCREATE  INDEX  "index_items_on_disabled" ON "items"  ("disabled")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150215230703"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateVotes (20150216000309)
+  [1m[35m (6.0ms)[0m  BEGIN
+  [1m[36m (14.8ms)[0m  [1mCREATE TABLE "votes" ("id" serial primary key, "user_id" integer NOT NULL, "votable_id" integer NOT NULL, "votable_type" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (2.6ms)[0m  CREATE UNIQUE INDEX  "index_votes_on_user_id_and_votable_id_and_votable_type" ON "votes"  ("user_id", "votable_id", "votable_type")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150216000309"]]
+  [1m[35m (1.7ms)[0m  COMMIT
+Migrating to CreateItemComments (20150216170958)
+  [1m[36m (5.8ms)[0m  [1mBEGIN[0m
+  [1m[35m (13.2ms)[0m  CREATE TABLE "item_comments" ("id" serial primary key, "user_id" integer NOT NULL, "item_id" integer NOT NULL, "content" text NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150216170958"]]
+  [1m[35m (4.9ms)[0m  COMMIT
+Migrating to AddHotScoreFunction (20150405200823)
+  [1m[36m (6.6ms)[0m  [1mBEGIN[0m
+  [1m[35m (23.6ms)[0m        create or replace function
+        hot_score(ups integer, downs integer, date timestamp with time zone)
+        returns numeric as $$
+        select round(cast(log(greatest(abs($1 - $2), 1)) * sign($1 - $2) +
+          (date_part('epoch', $3) - 1134028003) / 45000.0 as numeric), 7)
+      $$ language sql immutable;
+
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150405200823"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (4.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'item_comments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.3ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'votes'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for ::1 at 2016-04-25 20:59:54 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (13.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered user_sessions/_form.html.erb (366.0ms)
+  Rendered users/_form.html.erb (15.8ms)
+  Rendered components/_login_register.html.erb (440.8ms)
+  [1m[36mItem Load (22.1ms)[0m  [1mSELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC[0m
+  Rendered items/index.html.erb within layouts/application (489.3ms)
+  Rendered components/_flash.html.erb (0.5ms)
+  Rendered components/_top_navigation.html.erb (3.2ms)
+  Rendered components/_footer.html.erb (0.3ms)
+  Rendered components/_google_analytics.html.erb (0.4ms)
+Completed 200 OK in 817ms (Views: 760.1ms | ActiveRecord: 41.6ms)
+
+
+Started GET "/" for ::1 at 2016-04-25 20:59:55 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered user_sessions/_form.html.erb (8.5ms)
+  Rendered users/_form.html.erb (31.6ms)
+  Rendered components/_login_register.html.erb (42.9ms)
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC[0m
+  Rendered items/index.html.erb within layouts/application (45.4ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 121ms (Views: 120.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/new" for ::1 at 2016-04-25 21:00:00 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (7.1ms)
+  Rendered users/new.html.erb within layouts/application (8.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.8ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2016-04-25 21:00:07 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rCsSzqQI/q92wSORR7DOacxVOqNfc/KQLRIXTh7bmzjb0e3N520MUhnMwmn4C/gChkrEiodFw6qPW5z+4ytAHA==", "user"=>{"username"=>"nmahmood630@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "about"=>""}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (2.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'nmahmood630@gmail.com' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."token" = $1 LIMIT 1[0m  [["token", "149c231f28760af0364ee04efa4f8678"]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("username", "about", "salt", "crypted_password", "created_at", "updated_at", "token") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["username", "nmahmood630@gmail.com"], ["about", ""], ["salt", "arvBX8KC9dzpnKAewAwb"], ["crypted_password", "$2a$10$LKEN/LZtq14Karu5AcdAieUJQNuWi7xwd8Lb7OZHiGGvOAI/qa02G"], ["created_at", "2016-04-26 01:00:07.605560"], ["updated_at", "2016-04-26 01:00:07.605560"], ["token", "149c231f28760af0364ee04efa4f8678"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 155ms (ActiveRecord: 9.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-25 21:00:07 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered components/_login_register.html.erb (1.0ms)
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC[0m
+  Rendered items/index.html.erb within layouts/application (2.5ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items?newest=true" for ::1 at 2016-04-25 21:00:09 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"newest"=>"true"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered components/_login_register.html.erb (1.1ms)
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"  ORDER BY "items"."created_at" DESC[0m
+  Rendered items/index.html.erb within layouts/application (2.8ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.3ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/items/new" for ::1 at 2016-04-25 21:00:11 -0400
+Processing by ItemsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered items/_form.html.erb (8.0ms)
+  Rendered items/new.html.erb within layouts/application (9.5ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.4ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/items" for ::1 at 2016-04-25 21:00:19 -0400
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bwRxHJNwmTA++3BTDtb/k2e/Uvgy2Uxu1KYSRAJEwgwY/o4f0BVrzVH2kauxbcn4LaCs0ervfVR275n0/7QZKA==", "item"=>{"title"=>"lol", "url"=>"http://lol.com", "content"=>""}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mItem Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "items" WHERE "items"."id" IS NULL LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "items" ("title", "url", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["title", "lol"], ["url", "http://lol.com"], ["content", ""], ["user_id", 1], ["created_at", "2016-04-26 01:00:19.159054"], ["updated_at", "2016-04-26 01:00:19.159054"]]
+  [1m[36m (5.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mVote Load (11.4ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (19.1ms)
+Redirected to http://localhost:3000/items/1
+Completed 302 Found in 48ms (ActiveRecord: 18.6ms)
+
+
+Started GET "/items/1" for ::1 at 2016-04-25 21:00:19 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (1)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mItemComment Load (5.7ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 1]]
+  Rendered items/show.html.erb within layouts/application (22.2ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.4ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 64ms (Views: 46.1ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/items/1" for ::1 at 2016-04-25 21:00:20 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mVote Load (0.3ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (1)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mItemComment Load (0.3ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 1]]
+  Rendered items/show.html.erb within layouts/application (6.7ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 47ms (Views: 42.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items/1" for ::1 at 2016-04-25 21:00:22 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (1)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mItemComment Load (0.2ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 1]]
+  Rendered items/show.html.erb within layouts/application (5.1ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items/new" for ::1 at 2016-04-25 21:00:25 -0400
+Processing by ItemsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered items/_form.html.erb (6.3ms)
+  Rendered items/new.html.erb within layouts/application (7.1ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/items" for ::1 at 2016-04-25 21:00:38 -0400
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tSXxz1/lSg9iPUEmrHZMi64ehOTVmQNXACY/r8IeiufC3w7MHIC48g0woN4TzXrg5AF6zQ2vMm2ib7QfP+5Rww==", "item"=>{"title"=>"haha", "url"=>"http://nba.com", "content"=>"lolol"}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mItem Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "items" WHERE "items"."id" IS NULL LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("title", "url", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["title", "haha"], ["url", "http://nba.com"], ["content", "lolol"], ["user_id", 1], ["created_at", "2016-04-26 01:00:38.801562"], ["updated_at", "2016-04-26 01:00:38.801562"]]
+  [1m[36m (5.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.3ms)
+Redirected to http://localhost:3000/items/2
+Completed 302 Found in 14ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/items/2" for ::1 at 2016-04-25 21:00:38 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mVote Load (0.3ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (2)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mItemComment Load (0.1ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 2]]
+  Rendered items/show.html.erb within layouts/application (5.6ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.7ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 42.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items/2" for ::1 at 2016-04-25 21:00:40 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (2)[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mItemComment Load (0.1ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 2]]
+  Rendered items/show.html.erb within layouts/application (5.2ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items/2" for ::1 at 2016-04-25 21:00:41 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (2)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mItemComment Load (0.2ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 2]]
+  Rendered items/show.html.erb within layouts/application (8.0ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.5ms)
+  Rendered components/_footer.html.erb (0.1ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 43ms (Views: 39.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items" for ::1 at 2016-04-25 21:00:50 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered components/_login_register.html.erb (0.9ms)
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (1)
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.7ms)
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  Rendered items/index.html.erb within layouts/application (14.2ms)
+  Rendered components/_flash.html.erb (0.0ms)
+  Rendered components/_top_navigation.html.erb (1.0ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items" for ::1 at 2016-04-25 21:04:27 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered components/_login_register.html.erb (1.3ms)
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.3ms)
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  Rendered items/index.html.erb within layouts/application (8.8ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items/2" for ::1 at 2016-04-25 21:04:32 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (2)[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mItemComment Load (0.1ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 2]]
+  Rendered items/show.html.erb within layouts/application (6.3ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.5ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items/1" for ::1 at 2016-04-25 21:04:48 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mVote Load (0.3ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (1)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mItemComment Load (0.1ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 1]]
+  Rendered items/show.html.erb within layouts/application (6.6ms)
+  Rendered components/_flash.html.erb (0.0ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 54ms (Views: 42.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items/new" for ::1 at 2016-04-25 21:04:56 -0400
+Processing by ItemsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered items/_form.html.erb (8.0ms)
+  Rendered items/new.html.erb within layouts/application (9.2ms)
+  Rendered components/_flash.html.erb (0.0ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/items" for ::1 at 2016-04-25 21:05:12 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered components/_login_register.html.erb (1.1ms)
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (2.0ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.7ms)
+  Rendered items/index.html.erb within layouts/application (10.8ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 50ms (Views: 48.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/items/new" for ::1 at 2016-04-25 21:05:16 -0400
+Processing by ItemsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered items/_form.html.erb (7.2ms)
+  Rendered items/new.html.erb within layouts/application (7.8ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.3ms)
+  Rendered components/_footer.html.erb (0.1ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/items" for ::1 at 2016-04-25 21:05:24 -0400
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Obr9FfhryKFarZZgaoJSeWRbW9cwzv9I0Ibv0JeiTnROQAIWuw46XDWgd5jVOWQSLkSl/uj4znJyz2RgalKVUA==", "item"=>{"title"=>"dood", "url"=>"", "content"=>"doodlol"}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mItem Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "items" WHERE "items"."id" IS NULL LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("title", "url", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["title", "dood"], ["url", ""], ["content", "doodlol"], ["user_id", 1], ["created_at", "2016-04-26 01:05:24.099368"], ["updated_at", "2016-04-26 01:05:24.099368"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.3ms)
+Redirected to http://localhost:3000/items/3
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/items/3" for ::1 at 2016-04-25 21:05:24 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (3)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mItemComment Load (0.2ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 3]]
+  Rendered items/show.html.erb within layouts/application (5.8ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items" for ::1 at 2016-04-25 21:05:25 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered components/_login_register.html.erb (0.9ms)
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (1)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.7ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.3ms)
+  Rendered items/index.html.erb within layouts/application (11.5ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.0ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items/3" for ::1 at 2016-04-25 21:05:28 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (3)[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mItemComment Load (0.1ms)[0m  SELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC  [["item_id", 3]]
+  Rendered items/show.html.erb within layouts/application (4.5ms)
+  Rendered components/_flash.html.erb (0.0ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/items/3" for ::1 at 2016-04-25 21:05:39 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (3)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mItemComment Load (0.1ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 3]]
+  Rendered items/show.html.erb within layouts/application (4.8ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.5ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 0.6ms)

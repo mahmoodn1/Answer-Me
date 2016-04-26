@@ -10,9 +10,6 @@ class Item < ActiveRecord::Base
     if content.blank? && url.blank?
       errors.add(:url, 'Submit a URL or Content')
     end
-    if content.present? && url.present?
-      errors.add(:url, 'Submit a URL or Content but not Both.')
-    end
   end
   validates :url, url: {allow_nil: true, allow_blank: true}
 
