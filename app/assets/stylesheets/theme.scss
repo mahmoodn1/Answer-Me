@@ -124,11 +124,11 @@ a:focus {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #00b3fe;
+  color: #FFD700;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #00b3fe;
+  color: #FFD700;
   background-color: transparent;
 }
 
@@ -223,7 +223,7 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-  background-color: #00b3fe;
+  background-color: #FFD700;
   //	min-height: 550px;
   //	padding-top: 100px;
   padding-bottom: 0px;
@@ -238,6 +238,11 @@ a:focus {
 #headerwrap h1 {
   color: white;
   margin-bottom: 25px;
+}
+
+#headerwrap h4 {
+  color: white;
+  font-weight: 400;
 }
 
 #headerwrap .img-responsive {
