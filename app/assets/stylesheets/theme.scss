@@ -41,7 +41,7 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: $footerHeight;
-  background-color: #f5f5f5;
+  background-color: #384452;
   color: #384452;
 }
 
@@ -151,13 +151,13 @@ a:focus {
 .btn-theme:focus,
 .btn-theme:active,
 .btn-theme.active, {
-  color: #fff;
+  color: #FFD700;
   background-color: #384452;
   border-color: #384452;
 
   &:hover {
-    color: #fff;
-    background-color: #00b3fe;
+    color: #FFD700;
+    background-color: #FFD700;
     border-color: #384452;
   }
 }

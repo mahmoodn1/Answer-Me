@@ -20430,3 +20430,687 @@ Processing by ItemsController#index as HTML
   Rendered components/_footer.html.erb (0.0ms)
   Rendered components/_google_analytics.html.erb (0.0ms)
 Completed 200 OK in 862ms (Views: 861.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-04-26 00:00:00 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ItemsController#index as HTML
+  Rendered user_sessions/_form.html.erb (275.5ms)
+  Rendered users/_form.html.erb (12.1ms)
+  Rendered components/_login_register.html.erb (309.0ms)
+  [1m[35mItem Load (0.6ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  Rendered sync/items/_item.html.erb (1.7ms)
+  Rendered sync/items/_item.html.erb (0.9ms)
+  Rendered sync/items/_item.html.erb (0.8ms)
+  Rendered items/index.html.erb within layouts/application (347.5ms)
+  Rendered components/_flash.html.erb (2.1ms)
+  Rendered components/_top_navigation.html.erb (6.0ms)
+  Rendered components/_footer.html.erb (0.5ms)
+  Rendered components/_google_analytics.html.erb (0.5ms)
+Completed 200 OK in 620ms (Views: 608.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-26 00:00:01 -0400
+Processing by ItemsController#index as HTML
+  Rendered user_sessions/_form.html.erb (12.8ms)
+  Rendered users/_form.html.erb (25.6ms)
+  Rendered components/_login_register.html.erb (40.9ms)
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  Rendered sync/items/_item.html.erb (1.3ms)
+  Rendered sync/items/_item.html.erb (0.4ms)
+  Rendered sync/items/_item.html.erb (1.2ms)
+  Rendered items/index.html.erb within layouts/application (54.4ms)
+  Rendered components/_flash.html.erb (0.3ms)
+  Rendered components/_top_navigation.html.erb (2.7ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 116ms (Views: 114.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/items/1" for ::1 at 2016-04-26 00:00:08 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mVote Load (0.5ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (1)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mItemComment Load (0.4ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 1]]
+  Rendered items/show.html.erb within layouts/application (6.8ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 74ms (Views: 43.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/items/1" for ::1 at 2016-04-26 00:00:12 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (1)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mItemComment Load (0.1ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.8ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (3.6ms)
+  Rendered components/_footer.html.erb (0.1ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-04-26 00:00:15 -0400
+Processing by ItemsController#index as HTML
+  Rendered user_sessions/_form.html.erb (4.4ms)
+  Rendered users/_form.html.erb (7.9ms)
+  Rendered components/_login_register.html.erb (14.1ms)
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  Rendered sync/items/_item.html.erb (0.9ms)
+  Rendered sync/items/_item.html.erb (0.4ms)
+  Rendered sync/items/_item.html.erb (0.4ms)
+  Rendered items/index.html.erb within layouts/application (22.4ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items/3" for ::1 at 2016-04-26 00:00:27 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_type" = 'Item' AND "votes"."votable_id" IN (3)[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mItemComment Load (0.2ms)[0m  [1mSELECT "item_comments".* FROM "item_comments" WHERE "item_comments"."item_id" = $1  ORDER BY "item_comments"."created_at" ASC[0m  [["item_id", 3]]
+  Rendered items/show.html.erb within layouts/application (3.2ms)
+  Rendered components/_flash.html.erb (0.0ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 33.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items" for ::1 at 2016-04-26 00:00:34 -0400
+Processing by ItemsController#index as HTML
+  Rendered user_sessions/_form.html.erb (5.0ms)
+  Rendered users/_form.html.erb (7.6ms)
+  Rendered components/_login_register.html.erb (14.4ms)
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  Rendered sync/items/_item.html.erb (0.5ms)
+  Rendered sync/items/_item.html.erb (0.4ms)
+  Rendered sync/items/_item.html.erb (0.4ms)
+  Rendered items/index.html.erb within layouts/application (22.0ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.7ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items?newest=true" for ::1 at 2016-04-26 00:00:36 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"newest"=>"true"}
+  Rendered user_sessions/_form.html.erb (4.5ms)
+  Rendered users/_form.html.erb (8.6ms)
+  Rendered components/_login_register.html.erb (15.3ms)
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."created_at" DESC
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  Rendered sync/items/_item.html.erb (0.6ms)
+  Rendered sync/items/_item.html.erb (0.5ms)
+  Rendered sync/items/_item.html.erb (0.4ms)
+  Rendered items/index.html.erb within layouts/application (25.1ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for ::1 at 2016-04-26 00:00:37 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (9.6ms)
+  Rendered users/new.html.erb within layouts/application (10.5ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 43ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items?newest=true" for ::1 at 2016-04-26 00:00:39 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"newest"=>"true"}
+  Rendered user_sessions/_form.html.erb (7.9ms)
+  Rendered users/_form.html.erb (8.6ms)
+  Rendered components/_login_register.html.erb (18.4ms)
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."created_at" DESC
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  Rendered sync/items/_item.html.erb (0.9ms)
+  Rendered sync/items/_item.html.erb (0.5ms)
+  Rendered sync/items/_item.html.erb (0.6ms)
+  Rendered items/index.html.erb within layouts/application (26.9ms)
+  Rendered components/_flash.html.erb (0.3ms)
+  Rendered components/_top_navigation.html.erb (1.3ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 62ms (Views: 61.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/items" for ::1 at 2016-04-26 00:00:40 -0400
+Processing by ItemsController#index as HTML
+  Rendered user_sessions/_form.html.erb (4.9ms)
+  Rendered users/_form.html.erb (8.5ms)
+  Rendered components/_login_register.html.erb (15.2ms)
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  Rendered sync/items/_item.html.erb (0.6ms)
+  Rendered sync/items/_item.html.erb (0.4ms)
+  Rendered sync/items/_item.html.erb (0.7ms)
+  Rendered items/index.html.erb within layouts/application (23.3ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (2.0ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for ::1 at 2016-04-26 00:00:41 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (6.2ms)
+  Rendered user_sessions/new.html.erb within layouts/application (7.1ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for ::1 at 2016-04-26 00:00:43 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dW6w/pK7pWrPbMZ6FUcE14VAvEdDkRy5uw9E+G7hoSz/Hst8nTHFK9MsdV/j9RNO0D35LSOVUwp1kJ6nb3Ps6A==", "login"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = 'admin'  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered user_sessions/_form.html.erb (4.1ms)
+  Rendered user_sessions/new.html.erb within layouts/application (4.7ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.6ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 37.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/user_sessions" for ::1 at 2016-04-26 00:00:45 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SRrE53vxOBBY7wl0TCnwRssw0D3DZ62gbxeUCp1L4JLDar9ldHtYUUSvulG6m+ffnk2VV6Nj4hOhiE5VnNmtVg==", "login"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = 'admin'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered user_sessions/_form.html.erb (5.7ms)
+  Rendered user_sessions/new.html.erb within layouts/application (6.3ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.4ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 38.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items?newest=true" for ::1 at 2016-04-26 00:00:46 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"newest"=>"true"}
+  Rendered user_sessions/_form.html.erb (6.4ms)
+  Rendered users/_form.html.erb (10.1ms)
+  Rendered components/_login_register.html.erb (18.4ms)
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."created_at" DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  Rendered sync/items/_item.html.erb (0.7ms)
+  Rendered sync/items/_item.html.erb (0.6ms)
+  Rendered sync/items/_item.html.erb (0.6ms)
+  Rendered items/index.html.erb within layouts/application (27.9ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.3ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.1ms)
+Completed 200 OK in 72ms (Views: 71.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/new" for ::1 at 2016-04-26 00:00:48 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (11.5ms)
+  Rendered users/new.html.erb within layouts/application (12.2ms)
+  Rendered components/_flash.html.erb (0.0ms)
+  Rendered components/_top_navigation.html.erb (1.3ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 54ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-04-26 00:00:52 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AMguSsnD+bmfaITRcYx2L94vYOu553NS7SvsNZuQuWuKuFXIxkmZ+IMoN/SHPmG2i1IlgdnjPOEjtDZqmgL0rw==", "user"=>{"username"=>"nmahmood630@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "about"=>""}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'nmahmood630@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered users/_form.html.erb (9.8ms)
+  Rendered users/new.html.erb within layouts/application (10.4ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 184ms (Views: 49.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for ::1 at 2016-04-26 00:00:54 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (8.0ms)
+  Rendered users/new.html.erb within layouts/application (8.7ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2016-04-26 00:00:57 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (6.7ms)
+  Rendered user_sessions/new.html.erb within layouts/application (7.4ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (2.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for ::1 at 2016-04-26 00:01:01 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A4Luviuo23CHgr8LU6ISYdG5WvCWYWpPZkrK0yBi1E2J8pU8JCK7MZvCDC6lEAX4hMQfmvZlJfyo1RCMIfCZiQ==", "login"=>{"username"=>"nmahmood630@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = 'nmahmood630@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered user_sessions/_form.html.erb (4.9ms)
+  Rendered user_sessions/new.html.erb within layouts/application (5.5ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.1ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 150ms (Views: 33.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/user_sessions" for ::1 at 2016-04-26 00:01:06 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OUjp5mQqAOAigAlBrtiCaXkiepm5pZ1snUr87cHSCB6zOJJka6BgoT7AumRYapXwLF8/89mh0t9T1SaywEBF2g==", "login"=>{"username"=>"nmahmood630@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = 'nmahmood630@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 122ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-04-26 00:01:06 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered components/_login_register.html.erb (1.4ms)
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.6ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  Rendered items/index.html.erb within layouts/application (10.3ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.5ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items/new" for ::1 at 2016-04-26 00:01:15 -0400
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/_form.html.erb (6.9ms)
+  Rendered items/new.html.erb within layouts/application (7.9ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items?newest=true" for ::1 at 2016-04-26 00:01:20 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"newest"=>"true"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered components/_login_register.html.erb (0.9ms)
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"  ORDER BY "items"."created_at" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (1)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.2ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.0ms)
+  Rendered items/index.html.erb within layouts/application (9.7ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.3ms)
+  Rendered components/_footer.html.erb (0.2ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items" for ::1 at 2016-04-26 00:01:22 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered components/_login_register.html.erb (1.0ms)
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (1)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.2ms)
+  Rendered items/index.html.erb within layouts/application (10.1ms)
+  Rendered components/_flash.html.erb (0.0ms)
+  Rendered components/_top_navigation.html.erb (1.3ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items?newest=true" for ::1 at 2016-04-26 00:01:23 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"newest"=>"true"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered components/_login_register.html.erb (1.1ms)
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"  ORDER BY "items"."created_at" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (1)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.5ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.2ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.0ms)
+  Rendered items/index.html.erb within layouts/application (12.5ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.0ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items/new" for ::1 at 2016-04-26 00:01:24 -0400
+Processing by ItemsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered items/_form.html.erb (5.9ms)
+  Rendered items/new.html.erb within layouts/application (6.4ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/items/new" for ::1 at 2016-04-26 00:01:41 -0400
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/_form.html.erb (7.1ms)
+  Rendered items/new.html.erb within layouts/application (7.7ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/items/new" for ::1 at 2016-04-26 00:01:44 -0400
+Processing by ItemsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered items/_form.html.erb (7.5ms)
+  Rendered items/new.html.erb within layouts/application (8.3ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items?newest=true" for ::1 at 2016-04-26 00:01:46 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"newest"=>"true"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered components/_login_register.html.erb (1.3ms)
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."created_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.4ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.0ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.8ms)
+  Rendered items/index.html.erb within layouts/application (10.5ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.5ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items" for ::1 at 2016-04-26 00:01:47 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered components/_login_register.html.erb (0.8ms)
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.2ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.8ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.8ms)
+  Rendered items/index.html.erb within layouts/application (9.2ms)
+  Rendered components/_flash.html.erb (0.0ms)
+  Rendered components/_top_navigation.html.erb (1.0ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-04-26 00:01:52 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered components/_login_register.html.erb (0.9ms)
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.8ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.3ms)
+  Rendered items/index.html.erb within layouts/application (9.7ms)
+  Rendered components/_flash.html.erb (0.0ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-04-26 00:01:53 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered components/_login_register.html.erb (0.9ms)
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.2ms)
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.6ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  Rendered items/index.html.erb within layouts/application (11.2ms)
+  Rendered components/_flash.html.erb (0.0ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-04-26 00:03:09 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered components/_login_register.html.erb (0.8ms)
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.6ms)
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.7ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  Rendered items/index.html.erb within layouts/application (12.0ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.5ms)
+  Rendered components/_footer.html.erb (0.1ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 976ms (Views: 974.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-26 00:03:15 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered components/_login_register.html.erb (1.4ms)
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  [1m[35mVote Load (0.3ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (3.5ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.9ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.5ms)
+  Rendered items/index.html.erb within layouts/application (17.5ms)
+  Rendered components/_flash.html.erb (0.0ms)
+  Rendered components/_top_navigation.html.erb (1.1ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-26 00:05:36 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered components/_login_register.html.erb (7.2ms)
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.8ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  Rendered items/index.html.erb within layouts/application (15.6ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 767ms (Views: 765.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-04-26 00:05:44 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered components/_login_register.html.erb (1.1ms)
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (2.2ms)
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.3ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.0ms)
+  Rendered items/index.html.erb within layouts/application (12.1ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.5ms)
+  Rendered components/_footer.html.erb (0.1ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-26 00:06:33 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered components/_login_register.html.erb (0.8ms)
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.8ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.8ms)
+  Rendered items/index.html.erb within layouts/application (8.8ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 913ms (Views: 912.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items" for ::1 at 2016-04-26 00:06:36 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered components/_login_register.html.erb (1.0ms)
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 1], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (1.1ms)
+  [1m[36mVote Load (0.1ms)[0m  [1mSELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.8ms)
+  [1m[35mVote Load (0.1ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Item"]]
+  Rendered sync/items/_item.html.erb (0.9ms)
+  Rendered items/index.html.erb within layouts/application (9.6ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.4ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/logout" for ::1 at 2016-04-26 00:06:39 -0400
+Processing by UserSessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-26 00:06:39 -0400
+Processing by ItemsController#index as HTML
+  Rendered user_sessions/_form.html.erb (4.1ms)
+  Rendered users/_form.html.erb (6.4ms)
+  Rendered components/_login_register.html.erb (12.2ms)
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  Rendered sync/items/_item.html.erb (0.6ms)
+  Rendered sync/items/_item.html.erb (0.4ms)
+  Rendered sync/items/_item.html.erb (0.7ms)
+  Rendered items/index.html.erb within layouts/application (22.5ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.3ms)
+  Rendered components/_footer.html.erb (0.1ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-04-26 00:06:42 -0400
+Processing by ItemsController#index as HTML
+  Rendered user_sessions/_form.html.erb (4.2ms)
+  Rendered users/_form.html.erb (6.5ms)
+  Rendered components/_login_register.html.erb (12.8ms)
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"  ORDER BY "items"."rank" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (1)[0m
+  Rendered sync/items/_item.html.erb (0.5ms)
+  Rendered sync/items/_item.html.erb (0.4ms)
+  Rendered sync/items/_item.html.erb (0.4ms)
+  Rendered items/index.html.erb within layouts/application (19.7ms)
+  Rendered components/_flash.html.erb (0.1ms)
+  Rendered components/_top_navigation.html.erb (1.2ms)
+  Rendered components/_footer.html.erb (0.0ms)
+  Rendered components/_google_analytics.html.erb (0.0ms)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.5ms)
